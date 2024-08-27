@@ -1,0 +1,200 @@
+.bg-img {
+  background-image: url("/assets/images/bg-img.jpeg");
+  background-size: cover;
+  background-position: center;
+  font-family: var(--ion-font-family);
+}
+
+.full-height {
+  height: 100vh;
+}
+
+.toolbar-bg {
+  background-color: transparent;
+}
+
+ion-toolbar {
+  --background: transparent;
+}
+
+.header-col {
+  margin-left: 0 !important;
+  padding-left: 0 !important;
+}
+
+ion-card {
+  border-radius: 10px;
+}
+
+.card-padding {
+  padding: 10px;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+}
+
+ion-avatar {
+  margin-right: 15px;
+}
+
+h2 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: bold;
+  color: black;
+}
+
+p {
+  margin: 0;
+  margin-top: 5px;
+  font-size: 14px;
+}
+
+ion-icon {
+  font-size: 24px;
+  color: #000000;
+  background-color: #cce0fb;
+  border-radius: 50%;
+  padding: 7px;
+}
+
+ion-card {
+  margin-bottom: 20px;
+}
+
+.card-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.details-div {
+  margin-top: 10px;
+}
+
+.data-color {
+  color: rgb(33, 32, 32);
+}
+
+.back {
+  margin-left: -12px;
+  background-color: transparent;
+  color: rgb(255, 255, 255);
+  font-size: 30px;
+}
+
+.header-card-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+}
+
+.list-title {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 0;
+  font-size: 20px;
+  margin-top: -10px;
+  color: #fff;
+}
+
+.menu {
+  color: #fff;
+  font-size: 30px;
+  font-weight: bolder;
+  background-color: transparent;
+}
+
+.main-div {
+  display: flex;
+}
+
+.center-main-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.bed-room {
+  display: flex;
+}
+
+.bg-remove-icon {
+  background-color: transparent;
+}
+
+.bed-div {
+  display: flex;
+  align-content: center;
+}
+
+.room-div {
+  margin-left: 20px;
+  display: flex;
+  align-content: center;
+}
+
+.bed-title {
+  margin-top: 7px;
+  font-size: 16px;
+}
+
+.room-title {
+  margin-top: 7px;
+  font-size: 16px;
+}
+
+.last-div {
+  display: flex;
+}
+
+.age-gender {
+  display: flex;
+  align-content: center;
+  margin-top: 5px;
+}
+
+.pc {
+  margin: 0 10px;
+}
+
+.arrow-icon {
+  position: absolute;
+  right: 10px;
+  top: 30px;
+}
+
+.forward-icon {
+  background-color: #177ad7;
+  color: white;
+}
+
+.patient-img-div {
+  width: 90px;
+  height: 90px;
+  margin-right: 10px;
+}
+
+.patient-img {
+  border-radius: 10px !important;
+}
+
+.patient-name {
+  font-size: 18px;
+}
+
+.door-icon {
+  width: 25px;
+  height: 25px;
+  object-fit: cover;
+  margin-top: 6px;
+  margin-right: 5px;
+}
