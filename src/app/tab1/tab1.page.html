@@ -1,7 +1,8 @@
 <ion-content [fullscreen]="true">
-  <ion-grid class="bg-img full-height">
-    <ion-row class="full-height">
-      <ion-col *ngFor="let patient of patientData?.result" class="full-height">
+  <ion-grid class="bg-img">
+    <ion-row>
+      <!--  -->
+      <ion-col *ngFor="let patient of patientData?.result">
         <ion-col class="ion-no-margin header-col">
           <ion-header [translucent]="true" class="ion-no-shadow ion-no-border">
             <ion-toolbar class="toolbar-bg">
@@ -13,80 +14,62 @@
                   </div>
                 </div>
                 <div>
-                  <ion-icon name="menu-outline" class="menu"></ion-icon>
+                  <ion-icon name="notifications-outline" class="bell"></ion-icon>
                 </div>
               </div>
             </ion-toolbar>
           </ion-header>
         </ion-col>
+        <!--  -->
         <div *ngFor="let name of patient.Patients_Name">
-          <ion-card class="ion-no-margin">
+          <ion-card class="ion-no-margin" (click)="goToPage()">
             <ion-card-content class="ion-no-padding card-padding card-list">
               <div class="main-div">
                 <div class="patient-img-div">
-                  <img
-                    src="assets/images/avatar.jpg"
-                    alt="Patient Avatar"
-                    class="patient-img"
-                  />
+                  <img src="assets/images/avatar.jpg" alt="Patient Avatar" class="patient-img" />
                 </div>
                 <div class="center-main-div">
                   <div>
-                    <h2 class="patient-name">
+                    <ion-text class="patient-name">
                       {{ name.Patient_First_Name }} {{ name.Patient_Last_Name }}
-                    </h2>
+                    </ion-text>
                   </div>
-                  <div class="bed-room">
-                    <div class="bed-div">
-                      <ion-icon
-                        name="bed-outline"
-                        class="bg-remove-icon"
-                      ></ion-icon>
-                      <p class="data-color bed-title">
-                        {{ patient.BedNumber ? patient.BedNumber : 'N/A' }}
-                      </p>
-                    </div>
-                    <div class="room-div">
-                      <!-- <ion-icon
-                        name="business-outline"
-                        class="bg-remove-icon"
-                      ></ion-icon> -->
-                      <img src="/assets/images/door.png" alt="Room Icon" class="bg-remove-icon door-icon" />
-                      <p class="data-color room-title">
-                        {{ patient.Room ? patient.Room : 'N/A' }}
-                      </p>
-                    </div>
-                  </div>
+
                   <div class="last-div">
                     <div class="age-gender">
-                      <span class="data-color"
-                        >{{ patient.Age ? patient.Age : 'N/A' }}</span
-                      >
+                      <span class="">{{ patient.Age ? patient.Age : 'N/A' }}</span>
                       /
-                      <span class="data-color"
-                        >{{ patient.Gender === 'Male' ? 'M' : patient.Gender ===
-                        'Female' ? 'F' : 'N/A' }}</span
-                      >
+                      <span class="">{{ patient.Gender === 'Male' ? 'M' : patient.Gender ===
+                        'Female' ? 'F' : 'N/A' }}</span>
                     </div>
                     <div class="pc">
-                      <p class="data-color">
+                      <p class="cpt">
                         {{ patient.CPT_Code ? patient.CPT_Code : 'N/A' }}
                       </p>
                     </div>
-                    <div>
-                      <p class="data-color">
+                  </div>
+                  <div class="bed-room">
+                    <div class="bed-div">
+                      <img src="/assets/icon/bed.svg" alt="Bed Icon" class="bg-remove-icon" />
+                      <p class="bed-title">
+                        {{ patient.BedNumber ? patient.BedNumber : 'N/A' }}
+                      </p>
+                    </div>
+                    <span class="slaesh">/</span>
+                    <div class="room-div">
+                      <img src="/assets/icon/door.svg" alt="Room Icon" class="bg-remove-icon door-icon" />
+                      <p class="room-title">
+                        {{ patient.Room ? patient.Room : 'N/A' }}
+                      </p>
+                    </div>
+
+                    <div class="admission-div">
+                      <p class="admission">
                         {{ patient.AdmissionDate ? patient.AdmissionDate : 'N/A'
                         }}
                       </p>
                     </div>
                   </div>
-                </div>
-                <div class="arrow-icon">
-                  <ion-icon
-                    name="chevron-forward-outline"
-                    (click)="goToPage()"
-                    class="forward-icon"
-                  ></ion-icon>
                 </div>
               </div>
             </ion-card-content>

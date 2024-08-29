@@ -1,32 +1,30 @@
 .bg-img {
-  background-image: url("/assets/images/bg-img.jpeg");
-  background-size: cover;
-  background-position: center;
+  // background-image: url("/assets/images/bg-img.jpeg");
+  // background-size: cover;
+  // background-position: center;
+  background-color: #F9FAFF;
   font-family: var(--ion-font-family);
 }
 
-.full-height {
-  height: 100vh;
-}
-
-.toolbar-bg {
-  background-color: transparent;
-}
-
-ion-toolbar {
-  --background: transparent;
-}
+// 
 
 .header-col {
   margin-left: 0 !important;
   padding-left: 0 !important;
 }
 
-ion-card {
-  border-radius: 10px;
+ion-toolbar {
+  --background: transparent;
 }
 
-.card-padding {
+.toolbar-bg {
+  background-color: transparent;
+}
+
+.header-card-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   padding: 10px;
 }
 
@@ -35,16 +33,59 @@ ion-card {
   align-items: center;
 }
 
+.back {
+  margin-left: -23px;
+  background-color: transparent;
+  color: black;
+  font-size: 25px;
+}
+
+.list-title {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 0;
+  font-size: 20px;
+  margin-top: -10px;
+  color: black;
+}
+
+.bell {
+  color: #000000;
+  font-size: 25px;
+  margin-right: -17px;
+  background-color: transparent;
+}
+
+// 
+
+.card-padding {
+  padding: 10px;
+}
+
+.card-list {
+  display: flex;
+  flex-direction: column;
+  background-color: #F0F3FA;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+// 
+
+ion-card {
+  border-radius: 10px;
+}
+
 ion-avatar {
   margin-right: 15px;
 }
 
-h2 {
-  margin: 0;
-  font-size: 16px;
-  font-weight: bold;
-  color: black;
-}
+// h2 {
+//   margin: 0;
+//   font-size: 16px;
+//   font-weight: bold;
+//   color: black;
+// }
 
 p {
   margin: 0;
@@ -64,11 +105,6 @@ ion-card {
   margin-bottom: 20px;
 }
 
-.card-list {
-  display: flex;
-  flex-direction: column;
-}
-
 .details-div {
   margin-top: 10px;
 }
@@ -77,40 +113,9 @@ ion-card {
   color: rgb(33, 32, 32);
 }
 
-.back {
-  margin-left: -12px;
-  background-color: transparent;
-  color: rgb(255, 255, 255);
-  font-size: 30px;
-}
-
-.header-card-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px;
-}
-
 .left {
   display: flex;
   align-items: center;
-}
-
-.list-title {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  margin: 0;
-  font-size: 20px;
-  margin-top: -10px;
-  color: #fff;
-}
-
-.menu {
-  color: #fff;
-  font-size: 30px;
-  font-weight: bolder;
-  background-color: transparent;
 }
 
 .main-div {
@@ -125,10 +130,13 @@ ion-card {
 
 .bed-room {
   display: flex;
+  color: #8C8C8C !important;
 }
 
 .bg-remove-icon {
   background-color: transparent;
+  width: 23px;
+  margin-top: 5px;
 }
 
 .bed-div {
@@ -137,23 +145,25 @@ ion-card {
 }
 
 .room-div {
-  margin-left: 20px;
+  margin-left: 10px;
   display: flex;
   align-content: center;
 }
 
 .bed-title {
-  margin-top: 7px;
+  margin-top: 8px;
   font-size: 16px;
+  margin-left: 6px;
 }
 
 .room-title {
-  margin-top: 7px;
+  margin-top: 8px;
   font-size: 16px;
 }
 
 .last-div {
   display: flex;
+  color: #8C8C8C;
 }
 
 .age-gender {
@@ -166,21 +176,10 @@ ion-card {
   margin: 0 10px;
 }
 
-.arrow-icon {
-  position: absolute;
-  right: 10px;
-  top: 30px;
-}
-
-.forward-icon {
-  background-color: #177ad7;
-  color: white;
-}
-
 .patient-img-div {
-  width: 90px;
-  height: 90px;
-  margin-right: 10px;
+  width: 80px;
+  height: 80px;
+  margin-right: 15px;
 }
 
 .patient-img {
@@ -189,12 +188,31 @@ ion-card {
 
 .patient-name {
   font-size: 18px;
+  color: #000000;
 }
 
 .door-icon {
-  width: 25px;
-  height: 25px;
-  object-fit: cover;
-  margin-top: 6px;
-  margin-right: 5px;
+  width: 17px;
+  margin-top: 4px;
+  margin-right: 7px;
+}
+
+.admission-div {
+  margin-left: 15px;
+  margin-top: 3px;
+}
+
+.admission {
+  font-size: 16px;
+}
+
+.cpt {
+  font-size: 16px;
+  margin-left: 10px;
+}
+
+.slaesh {
+  font-size: 22px;
+  margin-top: 5px;
+  margin-left: 10px;
 }
